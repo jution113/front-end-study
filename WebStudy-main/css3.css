@@ -1,53 +1,34 @@
 .container {
+    padding-top: 100px;
     background-color: beige;
     height: 100vh;
     display: flex;
 }
 
 .item {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
 }
 
 .item1 {
-    background-color: red;
+    background-color: cadetblue;
+    flex-grow: 2;
+    flex-shrink: 10;
+    flex-basis: 50%;
+    align-self: center;
 }
 
 .item2 {
-    background-color: orange;
+    background-color: rgb(168, 125, 93);
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25%;
 }
 
 .item3 {
-    background-color: yellow;
-}
-
-.item4 {
-    background-color: green;
-}
-
-.item5 {
-    background-color: blue;
-}
-
-
-.item6 {
-    background-color: darkblue;
-}
-
-
-.item7 {
-    background-color: purple;
-}
-
-
-.item8 {
-    background-color: tomato;
-}
-
-.item9 {
-    background-color:yellowgreen;
-}
-
-.item10 {
-    background-color: aqua;
+    background-color: darksalmon;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25%
 }
