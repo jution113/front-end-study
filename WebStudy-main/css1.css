@@ -1,0 +1,57 @@
+* {
+    color:aqua;
+}
+
+li {
+    color:cadetblue;
+}
+
+li#special {
+    color:coral;
+}
+
+.red {
+    color: blue;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.blue {
+    color: red;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+button {
+    background-color: cadetblue;
+    /* color:darkgoldenrod */
+}
+
+button:hover {
+    color:brown
+}
+
+a[href="naver.com"] {
+    color:green;
+}
+
+a[href="google.com"] {
+    color:yellow;
+}
+
+a[href="$.com"] {
+    color:yellowgreen;
+}
+
+#acon {
+    width:100px;
+    height:100px;
+    margin: 50px;
+    border-width: 50px;
+    border-style: solid;
+    border-color: tomato;
+    padding: 100px 50px 100px 50px;
+    background-color: yellowgreen;
+}

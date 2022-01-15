@@ -1,0 +1,33 @@
+/*
+-display-
+inlin: 내용이 없으면 표시도 안됨
+block: 내용이 없어도 표시됨, 단 한줄에 하나만
+inline-block: 내용이 없어도 표시됨, 한줄에 여러개 가능
+
+-position-
+relative: 현재 위치에서의 위치
+absolute: 부모 안에서의 위치 / 자신의 위치가 없어짐으로 간주
+fixed: 웹페이지 상에서의 위치
+sticky: 화면 상에서 위치 고정 됨
+*/
+
+div {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 50px;
+    background-color: red;
+}
+
+.container {
+    background-color: yellow;
+    left: 50px;
+    top: 50px;
+    position: relative;
+}
+
+.box {
+    background-color: blue;
+    top: 50px;
+    left: 50px;
+    position: sticky;
+}
