@@ -1,7 +1,6 @@
-.normal {
-    font-size: 160px;
-}
-
-.header {
-    font-size: 10rem;
+h1 {
+    display: inline-block;
+    font-size: 5em;
+    background-color: aquamarine;
+    padding: 1em;
 }
