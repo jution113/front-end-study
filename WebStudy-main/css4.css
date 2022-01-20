@@ -1,6 +1,21 @@
-h1 {
-    display: inline-block;
-    font-size: 5em;
-    background-color: aquamarine;
-    padding: 1em;
+.component {
+    width: 50%;
+    border: 1px solid mediumspringgreen;
+    font-size: 2rem;
+}
+
+.title {
+    padding: 0.5em;
+    background-color: mediumspringgreen;
+}
+
+.contents {
+    padding: 0.5em;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .component {
+        font-size: 1.5rem;
+    }
 }
