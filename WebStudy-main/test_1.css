@@ -1,0 +1,40 @@
+body {
+    background-color:lightyellow;
+}
+
+.header {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:peru;
+    font-size: 2rem;
+    color: white;
+}
+
+.title {
+    align-items: center;
+}
+
+#doge {
+    width: 3em;
+    height: 3em;
+    padding: 1em;
+}
+
+.menu {
+
+}
+
+.tab {
+    font-size: 0.75em;
+    padding: 0.5em;
+}
+
+.link {
+
+}
+
+.linkTab {
+    width: 0.1em;
+}
