@@ -1,0 +1,25 @@
+body {
+    background-color: cornsilk;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    background-color: dodgerblue;
+}
+
+.navbar__logo {
+    
+}
+
+.navbar__menu {
+    display: flex;
+    justify-content: row;
+}
+
+.navbar__links {
+    display: flex;
+    justify-content: row;
+}
