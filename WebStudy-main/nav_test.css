@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: cornsilk;
+    font-family: "ROBOTO";
 }
 
 a {
@@ -12,8 +13,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    height: 10vh;
+
     background-color: dodgerblue;
     padding: 8px 12px;
 }
@@ -37,6 +37,11 @@ a {
     padding: 8px 12px;
 }
 
+.navbar__menu li:hover {
+    background-color:lightblue;
+    border-radius: 5px;
+}
+
 .navbar__links {
     display: flex;
     list-style: none;
@@ -46,4 +51,28 @@ a {
 
 .navbar__links li {
     padding: 8px 12px;
+}
+
+@media screen and (max-width: 750px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        /* padding: 8px 12px; */
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar__menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar__links {
+        justify-content: center;
+        width: 100%;
+    }
 }
