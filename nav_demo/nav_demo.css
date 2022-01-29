@@ -1,0 +1,45 @@
+:root {
+    --text-color: white;
+    --background-color: white;
+    --header-color: rgb(13, 17, 56);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    background-color: var(--header-color);
+}
+
+.nav_logo {
+    color: var(--text-color);
+}
+
+.nav_menu {
+    display: flex;
+    direction: row;
+    width: 100%;
+}
+
+.nav_menu ul {
+    padding-left: 0;
+    left: 0;
+}
+
+.nav_bars {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color:var(--text-color);
+}
+
+li {
+    list-style: none;
+}
