@@ -1,12 +1,18 @@
+:root {
+    --text-color: white;
+    --background-color: cornsilk;
+    --title-color: dodgerblue;
+}
+
 body {
     margin: 0;
-    background-color: cornsilk;
+    background-color: var(--background-color);
     font-family: "ROBOTO";
 }
 
 a {
     text-decoration: none;
-    color: white
+    color: var(--text-color)
 
 }
 .navbar {
@@ -14,17 +20,17 @@ a {
     justify-content: space-between;
     align-items: center;
 
-    background-color: dodgerblue;
+    background-color: var(--title-color);
     padding: 8px 12px;
 }
 
 .navbar__logo {
     font-size: 24px;
-    color: white;
+    color: var(--text-color);
 }
 
 .navbar__logo a {
-    color: white;
+    color: var(--text-color);
 }
 
 .navbar__menu {
@@ -45,7 +51,7 @@ a {
 .navbar__links {
     display: flex;
     list-style: none;
-    color: white;
+    color: var(--text-color);
     padding: 0;
 }
 
@@ -53,14 +59,21 @@ a {
     padding: 8px 12px;
 }
 
+.navbar__toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+}
+
 @media screen and (max-width: 750px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
-        /* padding: 8px 12px; */
+        padding: 8px 12px;
     }
 
     .navbar__menu {
+        display: none;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -68,11 +81,22 @@ a {
 
     .navbar__menu li {
         width: 100%;
+
         text-align: center;
     }
 
     .navbar__links {
+        display: none;
         justify-content: center;
         width: 100%;
+    }
+
+    .navbar__toggleBtn {
+        display: block;
+    }
+
+    .navbar__menu.active,
+    .navbar__links.active {
+        display: flex;
     }
 }
