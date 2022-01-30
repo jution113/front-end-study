@@ -6,6 +6,7 @@
 
 body {
     background-color: var(--background-color);
+    margin: 0px
 }
 
 .nav_bar {
@@ -18,21 +19,38 @@ body {
 
 .nav_logo {
     color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 8px 12px;
 }
 
 .nav_menu {
     display: flex;
-    direction: row;
+    justify-content: center;
     width: 100%;
+    padding-left: 0px;
 }
 
-.nav_menu ul {
-    padding-left: 0;
-    left: 0;
+.nav_menu li {
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.nav_menu :hover {
+    background-color: rgb(47, 50, 80);
+}
+
+.nav_links {
+    display: flex;
+    padding: 8px 12px;
+}
+
+.nav_links li {
+    padding: 8px 12px;
 }
 
 .nav_bars {
     display: none;
+    padding: 8px 12px;
 }
 
 a {
@@ -42,4 +60,25 @@ a {
 
 li {
     list-style: none;
+}
+
+@media screen and (max-width: 650px) {
+    .nav_menu {
+        display: block;
+        justify-content: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav_menu li {
+        align-self: center;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .nav_bars {
+        display: block;
+    }
 }
