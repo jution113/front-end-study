@@ -28,15 +28,15 @@ body {
     justify-content: center;
     width: 100%;
     padding-left: 0px;
-}
+}   
 
 .nav_menu li {
     padding: 8px 12px;
-    border-radius: 5px;
 }
 
 .nav_menu :hover {
     background-color: rgb(47, 50, 80);
+    border-radius: 5px;
 }
 
 .nav_links {
@@ -51,6 +51,7 @@ body {
 .nav_bars {
     display: none;
     padding: 8px 12px;
+    position: top;
 }
 
 a {
@@ -63,22 +64,38 @@ li {
 }
 
 @media screen and (max-width: 650px) {
-    .nav_menu {
-        display: block;
-        justify-content: column;
-        width: 100%;
+    .nav_bar {
+        flex-direction: column;
         align-items: center;
     }
 
+    .nav_logo {
+        align-self: flex-start;
+    }
+
+    .nav_menu {
+        display: none;
+        flex-direction: column;
+    }
+
     .nav_menu li {
-        align-self: center;
+        text-align: center;
     }
 
     .nav_links {
         display: none;
+        margin: 0px;
     }
 
     .nav_bars {
         display: block;
+        align-self: flex-end;
+        position: absolute;
+        top: 0px;
     }
-}
+
+    .nav_menu.active,
+    .nav_links.active {
+        display: flex;
+    }
+} 
