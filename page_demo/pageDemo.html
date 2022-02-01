@@ -6,99 +6,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="pageDemo.css" rel="stylesheet" type="text/css">
     <script src="pageDemo.js"></script>
+    <title>YouTube</title>
+
     <script src="https://kit.fontawesome.com/0ff48a17ed.js" crossorigin="anonymous"></script>
-    <title>pageDemo</title>
 </head>
 <body>
     <header class="header">
-        <a  href="#">
-            <i id="logo" class="fab fa-youtube"></i>
-            Youtube
-        </a>
+        <ul class="logo">
+            <li class="headerElement">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </li>
 
-        <ul>
-            <a id="searchBtn" href="#">
-                <i class="fas fa-search"></i>
-            </a>
-    
-            <a id="menuToggleBtn" href="#">
-                <i class="fas fa-ellipsis-v"></i>
-            </a>
+            <li class="headerElement">
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                    YouTube
+                </a>
+            </li>
+        </ul>
+
+        <ul class="search">
+            <li class="headerElement">
+                <input type="text" placeholder="검색">
+                <button type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </li>
+
+            <li class="headerElement">
+                
+            </li>
+        </ul>
+
+        <ul class="account">
+            <li class="headerElement">
+                <a href="">
+                    <i class="fas fa-video"></i>
+                </a>
+            </li>
+
+            <li class="headerElement">
+                <a href="">
+                    <i class="fas fa-th"></i>
+                </a>
+            </li>
+
+            <li class="headerElement">
+                <a href="">
+                    <i class="far fa-bell"></i>
+                </a>
+            </li>
+
+            <li class="headerElement">
+                <a href="">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </li>
         </ul>
     </header>
 
-    <section class="section">
-        <iframe width=100% height=100% src="https://www.youtube.com/embed/67stn7Pu7s4?list=PLv2d7VI9OotQ1F92Jp9Ce7ovHEsuRQB3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
+    <div class="content">
+        <section>
+            <article-1 class="videoArea">
+                <video class="content" src="" controls="controls" poster="">
+                    video
+                </video>
+            </article-1>
 
-    <footer class="footer">
-        <div class="infoArea">
-            <ul>
-                <P>#DremCoding #DreamCoder #Ellie</P>
-                <li class="tittle">
-                    <div>
-                        클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+            <article-2 class="infoArea">
+                <div class="titleInfo">
+                    <a href="#">#html</a> <a>#clonecoding</a> <a>toyproject</a> <br>
+                    "pageDemo" 직접 만들어 보는 YouTube 페이지 2022-02-01
+
+                    <div class="viewInfo">
+                        <div class="viewCount">
+                            조회수 16,929,031회 · 2022-02-01
+                        </div>
+                        
+                        <div class="options">
+                            <a href="#">
+                                <i class="far fa-thumbs-up"></i> 8.1만
+                            </a href="#">
+    
+                            <a href="#">
+                                <i class="far fa-thumbs-down"></i> 싫어요
+                            </a href="#">
+    
+                            <a href="#">
+                                <i class="fas fa-share"></i> 공유
+                            </a>
+    
+                            <a href="#">
+                                <i class="fas fa-download"></i> 오프라인 저장
+                            </a>
+    
+                            <a href="#">
+                                <i class="fas fa-tasks"></i> 저장
+                            </a>
+                        </div>
                     </div>
+                    
+                </div class="userInfo">
+                    dasd
+                <div>
 
+                </div>
+            </article-2>
+
+            <article-3 class="commentArea">
+
+            </article-3>
+        </section>
+        
+        <aside class="recommendVideos">
+            <ul class="videoList">
+                <li class="recommendVideo">
+                    <video src="" controls="controls" poster="">
+                        recommendVideo
+                    </video>
                     <div>
-                        <a href="#">
-                            <i class="fas fa-caret-down"></i>
-                        </a>
+                        <p class="videoTitle">
+                            石川紅奈 KURENA ISHIKAWA ♪Off The Wall
+                        </p>
                     </div>
-
-                </li>
-                <li class="options">
                     <a href="#">
-                        <div class="option">
-                            <i class="far fa-thumbs-up"></i>
-                            1K
-                        </div>
-                    </a>
-
-                    <a href="#">
-                        <div class="option">
-                            <i class="far fa-thumbs-down"></i>
-                            0
-                        </div>
-                    </a>
-
-                    <a href="#">
-                        <div class="option">
-                            <i class="fas fa-share"></i>
-                            Share
-                        </div>
-                    </a>
-
-                    <a href="#">
-                        <div class="option">
-                            <i class="fas fa-plus"></i>
-                            Save
-                        </div>
-                    </a>
-
-                    <a href="#">
-                        <div class="option">
-                            <i class="fas fa-flag"></i>
-                            Report
-                        </div>
+                        <i class="fas fa-ellipsis-v"></i>
                     </a>
                 </li>
             </ul>
-
-            <div>
-                <i class="far fa-user"></i>
-                드림코딩 엘리
-            </div>
-        </div>
-
-        <div class="videoArea">
-            관련영상
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </div>
-    </footer>
+        </aside>
+    </div>
 </body>
 </html>
