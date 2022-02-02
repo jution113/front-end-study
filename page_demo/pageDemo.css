@@ -9,6 +9,7 @@
 
 ul {
     list-style: none;
+    padding: 0px;
 }
 
 a {
@@ -43,6 +44,21 @@ body {
     color: var(--headerText-color);
 }
 
+.search {
+    display: flex;
+}
+
+.search input {
+    width: 500px;
+    height: 40px;
+}
+
+.search button {
+    width: 40px;
+    align-items: stretch;
+    padding: 1px;
+}
+
 .content {
     display: flex;
 }
@@ -71,17 +87,13 @@ section {
     padding: 8px 12px;
 }
 
-.titleInfo {
+.videoInfo {
+    padding-bottom: 8px 0px;
     border-bottom: solid 1px var(--content-color-fade);
 }
 
-.titleInfo a {
+.videoInfo a {
     color: var(--tag-color);
-}
-
-.viewInfo {
-    display: flex;
-    justify-content: space-between;
 }
 
 .options a {
@@ -89,15 +101,11 @@ section {
     padding: 8px 12px;
 }
 
-.userInfo {
-    border-bottom: solid 1px var(--content-color-fade);
-}
 
 .commentArea {
     width: 100%;
     height: 100%;
     padding: 8px 12px;
-    background-color: tan;
 }
 
 aside {
